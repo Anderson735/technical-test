@@ -1,0 +1,56 @@
+.content {
+  width: 100vw;
+  background: linear-gradient(
+    90deg,
+    rgb(227, 218, 217) 24%,
+    rgb(220, 227, 210) 100%
+  );
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__form {
+    width: 420px;
+    background: var(--content-color);
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    box-shadow: 1px 9px 5px -5px rgba(128, 128, 128, 1);
+
+    > input {
+      border: none;
+      margin: 5px 0;
+      padding: 15px 5px;
+      width: 100%;
+      max-width: 450px;
+      outline: solid 1px rgba(200, 200, 200);
+      color: var(--font-color);
+      &:focus {
+        border: none;
+      }
+    }
+
+    &_redirect {
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: bolder;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+
+    > button {
+      padding: 12px 0;
+      width: 125px;
+      border: none;
+      background: var(--bg-color);
+      color: var(--content-color);
+      cursor: pointer;
+    }
+  }
+}
