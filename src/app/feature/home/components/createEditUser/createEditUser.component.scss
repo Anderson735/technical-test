@@ -1,0 +1,31 @@
+.formUser{
+    margin-top: 20px;
+}
+
+form{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.fields{
+    width: 49%;
+    .country__code{
+        width: 34%;
+        margin-right: 10px;
+    }
+    .phone{
+        width: 64%;
+    }
+}
+
+button {
+    padding: 12px 0;
+    width: 125px;
+    border: none;
+    background: var(--bg-color);
+    color: var(--content-color);
+    cursor: pointer;
+}

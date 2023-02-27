@@ -1,0 +1,44 @@
+<section class="formUser">
+
+  <h1>Crear Usuario</h1>
+  <form>
+    <mat-form-field fill="outline" [hideRequiredMarker]="true" class="fields">
+      <mat-label>Nombre</mat-label>
+      <input matInput type="text" />
+    </mat-form-field>
+    <mat-form-field fill="outline" [hideRequiredMarker]="true" class="fields">
+      <mat-label>Correo</mat-label>
+      <input matInput type="text" />
+    </mat-form-field>
+    <div class="fields">
+      <mat-form-field appearance="fill" [hideRequiredMarker]="true" class="country__code">
+        <mat-label>Código de país</mat-label>
+        <mat-select >
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+      <mat-form-field fill="outline" [hideRequiredMarker]="true" class="phone">
+        <mat-label>Número de télefono</mat-label>
+        <input matInput type="text" />
+      </mat-form-field>
+    </div>
+    <mat-form-field fill="outline" [hideRequiredMarker]="true" class="fields">
+      <mat-label>Titulo trabajo</mat-label>
+      <input matInput type="text" />
+    </mat-form-field>
+    <mat-form-field fill="outline" [hideRequiredMarker]="true" class="fields">
+      <mat-label>Area</mat-label>
+      <input matInput type="text" />
+    </mat-form-field>
+    <mat-form-field fill="outline" [hideRequiredMarker]="true" class="fields">
+      <mat-label>Temas</mat-label>
+      <input matInput type="text" />
+    </mat-form-field>
+    <button type="submit">
+      <span>Enviar</span>
+    </button>
+  </form>
+</section>
