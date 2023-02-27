@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import { CardComponent } from './components/card/card.component';
-
+import { SharedModule } from '../../shared/shared.module';
+import {
+  CreateEditUserComponent,
+  UserComponent,
+  ModalDeleteComponent
+} from './components';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    CardComponent
+    UserComponent,
+    CreateEditUserComponent,
+    ModalDeleteComponent
   ],
-  imports: [
-    CommonModule,
-    HomeRoutingModule
-  ]
+  imports: [CommonModule, SharedModule, HomeRoutingModule],
 })
-export class HomeModule { }
+export class HomeModule {}
